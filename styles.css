@@ -1,0 +1,285 @@
+body {
+    margin: 0px;
+    font-size: 4vh;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+/** Header Content Start*/
+.header {
+    background-color: white;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 2fr 3fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 2px;
+}
+
+.search-logo {
+    width: 12px;
+    justify-self: right;
+    align-self: center;
+}
+
+.search-bar {
+    margin: 8px;
+    border-radius: 50px;
+    background-color: rgb(229, 229, 238);
+
+}
+
+.account-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-content: center;
+    justify-items: center;
+    gap: 8px;
+    margin-right: 20px;
+}
+
+.notify {
+    justify-self: center;
+    align-self: center;
+}
+
+.small-profile {
+    background-color: yellow;
+    justify-self: center;
+    align-self: center;
+    aspect-ratio: 1 / 1;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.profile-text {
+    justify-self: left;
+    align-self: center;
+    font-family: "roboto";
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.user-greeting {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.big-profile-container {
+    display: grid;
+}
+
+.big-profile {
+    background-color: yellow;
+    justify-self: right;
+    align-self: center;
+    aspect-ratio: 1 / 1;
+    width: 40%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.greet-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.hi-there {
+    font-family: "roboto";
+    font-size: 8px;
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+.userid {
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.action-buttons {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    height: 40%;
+    gap: 12px;
+    margin-right: 12px;
+}
+
+.blue-button {
+    flex: 1;
+    color: white;
+    font-family: "roboto";
+    font-size: 0.6em;
+    font-weight: 600;
+    background-color: #1992D4;
+    border-radius: 100px;
+    border: 0px;
+}
+
+/** Header Content End*/
+
+/** Sidebar Content Start*/
+.sidebar {
+    background-color: #1992D4;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 5fr;
+    gap: 10px
+}
+
+.sb-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.sb-dashboard-logo {
+    filter: invert(100%);
+    width: 1.5em;
+}
+
+.sb-dashboard-text {
+    padding-top: 4px;
+    justify-self: left;
+    color: white;
+    font-size: 0.8em;
+    font-family: "roboto";
+    font-weight: 500;
+}
+
+.sb-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-content: top;
+    justify-items: center;
+}
+
+.sb-icon {
+    align-self: center;
+    filter: invert(100%);
+    width: 0.8em;
+}
+
+.sb-text {
+    align-self:center;
+    color: white;
+    font-size: 0.6em;
+    font-family: "roboto";
+    font-weight: 500;
+    justify-self: left;
+}
+
+.sidebar-lower-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr;
+}
+
+/** Sidebar Content End*/
+
+/** Body Content Start*/
+.main {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 14fr;
+    align-content: center;
+    gap: 8px;
+    padding: 8px;
+}
+
+.main-heading {
+    align-self:flex-end;
+    font-family: "roboto";
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding: 8%;
+    border-left: #F0B429 solid 0.25em;
+    gap: 4px;
+}
+
+.card-heading {
+    font-family: "roboto";
+    font-size: 0.6em;
+    font-weight: 600;
+}
+
+.card-body {
+    font-family: "roboto";
+    font-size: 0.5em;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 10px;
+}
+
+.card-icon {
+    width: 8%;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 3fr 1fr 3fr;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.ann-card {
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-content: center;
+    padding: 12px;
+}
+
+.ann-el-header {
+    font-family: "roboto";
+    font-size: 0.5em;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.ann-el-body {
+    font-family: "roboto";
+    font-size: 0.4em;
+}
+
+
+/** Body Content End*/
